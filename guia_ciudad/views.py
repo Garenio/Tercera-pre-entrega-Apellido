@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from datetime import datetime
 
-# Create your views here.
+from django.db.models import Q
+from django.shortcuts import render, redirect
+from django.urls import reverse
+from django.http import HttpResponse
+
+
+
+def base(request):
+    return render(
+        request=request,
+        template_name='guia_ciudad/base.html',
+    )
