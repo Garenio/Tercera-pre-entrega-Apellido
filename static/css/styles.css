@@ -235,11 +235,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #161616  ;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #FF3D00;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3030,13 +3030,15 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #FF3D00;
+  border-color: #FF3D00;
+  font-weight: bold;
+  font-size: 18px;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #454647;
+  border-color: #454647;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -4441,7 +4443,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(28, 93, 233, 0.9);
+  color: #FF3D00;
 }
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.55);
@@ -7378,7 +7380,6 @@ textarea.form-control-lg {
 .mb-5 {
   margin-bottom: 3rem !important;
 }
-
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -11303,15 +11304,15 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
+  background: url("../assets/img/municipalidad-campana.jpg") no-repeat bottom -80px center;
+  background-size:cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1c375e;
+  background-color: #000000;
   height: 100%;
   width: 100%;
   top: 0;
@@ -11376,6 +11377,6 @@ header.masthead h1, header.masthead .h1 {
 }
 
 footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }

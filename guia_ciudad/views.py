@@ -7,8 +7,8 @@ from django.http import HttpResponse
 
 
 
-def base(request):
+def inicio(request):
     return render(
         request=request,
-        template_name='guia_ciudad/base.html',
+        template_name='guia_ciudad/inicio.html',
     )
