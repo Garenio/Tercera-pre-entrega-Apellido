@@ -35,5 +35,5 @@ python manage.py createsuperuser
 
 ## Términos y condiciones
 + Proyecto creado por Eugenio Garcia para la academia Coderhouse durante el curso de Phyton.
-+ Todo el contenido del proyecto es de propia autoría por lo que no se deben dar créditos correspondientes.
++ Todo el contenido del proyecto es de propia autoría por lo que no se deben dar créditos a terceros.
 + El proyecto fue creado exclusivamente con fines educativos. No utilizar con carácter comercial.
