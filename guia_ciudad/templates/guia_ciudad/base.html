@@ -37,13 +37,15 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">Inicio</a></li>
+                            <li class="list-inline-item"><a href="{% url 'inicio' %}">Inicio</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Comercios</a></li>
+                            <li class="list-inline-item"><a href="{% url 'listar_comercios' %}">Comercios</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Gastronomía</a></li>
+                            <li class="list-inline-item"><a href="{% url 'listar_restaurantes' %}">Gastronomía</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Clasificados</a></li>
+                            <li class="list-inline-item"><a href="{% url 'listar_propiedades' %}">Propiedades</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="{% url 'listar_clasificados' %}">Clasificados</a></li>
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; Creado por Eugenio Garcia. Todos los derechos reservados.</p>
                     </div>

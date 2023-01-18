@@ -22,6 +22,6 @@ class PropiedadFormulario(forms.Form):
 
 class ClasificadoFormulario(forms.Form):
     producto = forms.CharField(max_length=128)
-    descripcion = forms.Textarea()
+    descripcion = forms.CharField(max_length=256)
     precio = forms.IntegerField()
     contacto = forms.EmailField()

@@ -4,11 +4,11 @@
 
 {% block contenido %}
 <section style="padding:20px 20px; margin-left: 150px;">
-    <h2> Completa el formulario para agregar un comercio: </h2>
-    <form action="{% url 'agregar_comercio' %}" method="post">
+    <h1 class="mb-4" style="font-size: 20px"> Completa el formulario para agregar un comercio: </h1>
+    <form class="form-label;" action="{% url 'agregar_comercio' %}" method="post">
     {% csrf_token %}
     {{ formulario.as_p }}
-    <input type="submit" value="Agregar" />
+    <input class="btn btn-secondary" type="submit" value="Agregar"/>
     </form>
 </section>
 {% endblock contenido %}

@@ -3,19 +3,21 @@
 {% block subtitulo %}Clasificados{% endblock subtitulo %}
 
 {% block contenido %}
-<section style="padding:20px 20px; margin-left: 150px;">
-    <h1 class="mb-5">Clasificados:</h1>
-    <form action="{% url 'buscar_clasificados' %}" method="post">
+<section style="padding:20px 20px; margin-left: 150px; margin-right: 150px;">
+    <h1 class="mb-4">Clasificados:</h1>
+    <form class="form-label" action="{% url 'buscar_clasificados' %}" method="post">
         {% csrf_token %}
         <input type="text" name="busqueda">
         <input type="submit" value="Buscar">
     </form>
-    <a href="{% url 'agregar_clasificado' %}">Agregar un clasificado</a>
+    <div class="mb-4">
+    <a href="{% url 'agregar_clasificado' %}"><FONT COLOR="#FF3D00">+ Agregar un clasificado</FONT></a>
+    </div>
     <table class="table">
         <tr>
             <td><b>PRODUCTO</b></td>
             <td><b>DESCRIPCIÓN</b></td>
-            <td><b>PRECIO</b></td>
+            <td><b>PRECIO AR$</b></td>
             <td><b>CONTACTO</b></td>
         </tr>
         {% for clasificado in clasificados %}

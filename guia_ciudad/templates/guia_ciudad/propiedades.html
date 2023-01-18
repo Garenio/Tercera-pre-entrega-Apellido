@@ -4,19 +4,21 @@
 
 {% block contenido %}
 <section style="padding:20px 20px; margin-left: 150px;">
-    <h1 class="mb-5">Propiedades en venta/alquiler:</h1>
-    <form action="{% url 'buscar_propiedades' %}" method="post">
+    <h1 class="mb-4">Propiedades en venta/alquiler:</h1>
+    <form class="form-label" action="{% url 'buscar_propiedades' %}" method="post">
         {% csrf_token %}
         <input type="text" name="busqueda">
         <input type="submit" value="Buscar">
     </form>
-    <a href="{% url 'agregar_propiedad' %}">Agregar una propiedad</a>
+    <div class="mb-4">
+    <a href="{% url 'agregar_propiedad' %}"><FONT COLOR="#FF3D00">+ Agregar una propiedad</FONT></a>
+    </div>
     <table class="table">
         <tr>
             <td><b>TIPO</b></td>
             <td><b>OPERACIÓN</b></td>
             <td><b>HABITACIONES</b></td>
-            <td><b>PRECIO</b></td>
+            <td><b>PRECIO USD</b></td>
             <td><b>CONTACTO</b></td>
         </tr>
         {% for propiedad in propiedades %}

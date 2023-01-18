@@ -1,4 +1,4 @@
-# ProyectoCoder
+# Proyecto Portal Campana
 
 ## Instrucciones instalar proyecto en local
 + Crea una carpeta contenedora madre
@@ -28,6 +28,10 @@ python manage.py createsuperuser
 + Dentro de cada categoría se podrá ver la lista disponible, el cuadro de búsqueda y un botón para agregar contenido.
 + Para buscar en la lista simplemente se debe escribir en el cuadro de búsqueda y presionar el botón "buscar".
 + En la sección de agregar contenido se deben llenar los campos y presionar el botón "agregar"
++ Sección "Comercios" - La busqueda podrá ser por Nombre o Categoría del comercio.
++ Sección "Gastronomía" - La busqueda podrá ser por Nombre o Especialidad del comercio.
++ Sección "Propiedades" - La busqueda podrá ser por Tipo de propiedad u operación.
++ Sección "Clasificados" - La busqueda podrá ser por Producto o Descripción.
 
 ## Términos y condiciones
 + Proyecto creado por Eugenio Garcia para la academia Coderhouse durante el curso de Phyton.
