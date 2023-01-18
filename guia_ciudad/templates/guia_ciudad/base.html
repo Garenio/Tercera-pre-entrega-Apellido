@@ -23,9 +23,9 @@
             <div class="container">
                 <a class="btn btn-primary" href="{% url 'inicio' %}">Inicio</a>
                 <a class="navbar-brand" href="{% url 'listar_comercios' %}">Comercios</a>
-                <a class="navbar-brand" href="">Gastronomía</a>
-                <a class="navbar-brand" href="">Propiedades</a>
-                <a class="navbar-brand" href="">Clasificados</a>
+                <a class="navbar-brand" href="{% url 'listar_restaurantes' %}">Gastronomía</a>
+                <a class="navbar-brand" href="{% url 'listar_propiedades' %}">Propiedades</a>
+                <a class="navbar-brand" href="{% url 'listar_clasificados' %}">Clasificados</a>
             </div>
         </nav>
         <!-- Masthead-->

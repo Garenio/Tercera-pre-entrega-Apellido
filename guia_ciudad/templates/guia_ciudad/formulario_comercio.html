@@ -1,0 +1,14 @@
+{% extends "guia_ciudad/base.html" %}
+
+{% block subtitulo %}Agregar Comercio{% endblock subtitulo %}
+
+{% block contenido %}
+<section style="padding:20px 20px; margin-left: 150px;">
+    <h2> Completa el formulario para agregar un comercio: </h2>
+    <form action="{% url 'agregar_comercio' %}" method="post">
+    {% csrf_token %}
+    {{ formulario.as_p }}
+    <input type="submit" value="Agregar" />
+    </form>
+</section>
+{% endblock contenido %}
