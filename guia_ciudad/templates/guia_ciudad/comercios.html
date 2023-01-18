@@ -1,0 +1,25 @@
+{% extends "guia_ciudad/base.html" %}
+
+{% block subtitulo %}Comercios{% endblock subtitulo %}
+
+{% block contenido %}
+<section style="padding:20px 20px; margin-left: 150px;">
+    <h1 class="mb-5">Comercios de la ciudad:</h1>
+    <table class="table">
+        <tr>
+            <td><b>NOMBRE</b></td>
+            <td><b>CATEGORIA</b></td>
+            <td><b>DIRECCIÓN</b></td>
+            <td><b>HORARIO</b></td>
+        </tr>
+        {% for comercio in comercios %}
+        <tr>
+            <td>{{ comercio.nombre }}</td>
+            <td>{{ comercio.categoria }}</td>
+            <td>{{ comercio.direccion }}</td>
+            <td>{{ comercio.horario }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
+{% endblock contenido %}
